@@ -98,7 +98,7 @@
   <aside>
     <button class="month-btn" onclick="showMonth(this,'may')">5월 <span class="cnt">3</span></button>
     <button class="month-btn" onclick="showMonth(this,'jun')">6월 <span class="cnt">7</span></button>
-    <button class="month-btn active" onclick="showMonth(this,'jul')">7월 <span class="cnt">2</span></button>
+    <button class="month-btn active" onclick="showMonth(this,'jul')">7월 <span class="cnt">3</span></button>
     <button class="month-btn empty" onclick="showMonth(this,'aug')">8월 <span class="cnt">0</span></button>
   </aside>
   <main>
@@ -391,8 +391,8 @@
         </div>
       </div>
       <div class="summary-cards">
-        <div class="card"><div class="lbl">총 지출액</div><div class="val">796,070원</div></div>
-        <div class="card"><div class="lbl">건수</div><div class="val">2건</div></div>
+        <div class="card"><div class="lbl">총 지출액</div><div class="val">2,505,470원</div></div>
+        <div class="card"><div class="lbl">건수</div><div class="val">3건</div></div>
         <div class="card"><div class="lbl">제출 인원</div><div class="val">2명</div></div>
       </div>
       <div class="person-section">
@@ -441,28 +441,28 @@
           <div class="pl">
             <div class="avatar" style="background:#4a6fa5;">노</div>
             <span class="pname">노승환</span>
-            <span class="pcnt">1건</span>
+            <span class="pcnt">2건</span>
           </div>
           <div class="pr">
-            <span class="ptotal">402,600원</span>
-            <span class="chev open" id="chev-p6">▼</span>
+            <span class="ptotal">2,112,000원</span>
+            <span class="chev" id="chev-p6">▼</span>
           </div>
         </div>
-        <div class="person-body open" id="body-p6">
+        <div class="person-body" id="body-p6">
           <table>
             <colgroup><col><col><col><col><col></colgroup>
             <thead>
               <tr><th>날짜</th><th>내용</th><th>구분</th><th>금액</th><th>영수증</th></tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="row-done">
                 <td>2026-07-09</td>
                 <td>
-                  <div style="font-weight:500;">임명패 납품 6개 <span class="badge-new">신규</span></div>
+                  <div style="font-weight:500;">임명패 납품 6개 <span class="badge-done">✓ 완료</span></div>
                   <div style="font-size:11px;color:var(--text-sub);margin-top:3px;">새마을금고 9002-1565-9933-4 · 노승환(기프트상인)</div>
                 </td>
                 <td><span class="badge blue">세금계산서</span></td>
-                <td>402,600원</td>
+                <td><span class="amount-done">402,600원</span></td>
                 <td><button class="receipt-btn" onclick="toggleReceipt('r12')">📎</button></td>
               </tr>
               <tr class="receipt-row"><td colspan="5"><div class="receipt-viewer" id="r12">
@@ -482,7 +482,7 @@
       </div>
             <div class="total-bar">
         <span class="tl">총 정산 요청 금액</span>
-        <span class="tv">796,070원</span>
+        <span class="tv">2,505,470원</span>
       </div>
     </div>
     <div class="month-panel" id="panel-aug">
