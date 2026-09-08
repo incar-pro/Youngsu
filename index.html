@@ -100,7 +100,7 @@
     <button class="month-btn" onclick="showMonth(this,'jun')">6월 <span class="cnt">7</span></button>
     <button class="month-btn" onclick="showMonth(this,'jul')">7월 <span class="cnt">6</span></button>
     <button class="month-btn" onclick="showMonth(this,'aug')">8월 <span class="cnt">7</span></button>
-      <button class="month-btn active" onclick="showMonth(this,'sep')">9월 <span class="cnt">2</span></button>
+      <button class="month-btn active" onclick="showMonth(this,'sep')">9월 <span class="cnt">3</span></button>
   </aside>
   <main>
 
@@ -754,8 +754,8 @@
         </div>
       </div>
       <div class="summary-cards">
-        <div class="card"><div class="lbl">총 지출액</div><div class="val">395,000원</div></div>
-        <div class="card"><div class="lbl">건수</div><div class="val">2건</div></div>
+        <div class="card"><div class="lbl">총 지출액</div><div class="val">1,135,000원</div></div>
+        <div class="card"><div class="lbl">건수</div><div class="val">3건</div></div>
         <div class="card"><div class="lbl">제출 인원</div><div class="val">2명</div></div>
       </div>
       <div class="person-section">
@@ -808,10 +808,10 @@
           <div class="pl">
             <div class="avatar">정</div>
             <span class="pname">정영수</span>
-            <span class="pcnt">1건</span>
+            <span class="pcnt">2건</span>
           </div>
           <div class="pr">
-            <span class="ptotal">165,000원</span>
+            <span class="ptotal">905,000원</span>
             <span class="chev open" id="chev-p11">▼</span>
           </div>
         </div>
@@ -822,14 +822,14 @@
               <tr><th>날짜</th><th>내용</th><th>구분</th><th>금액</th><th>영수증</th></tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="row-done">
                 <td>2026-09-04</td>
                 <td>
-                  <div style="font-weight:500;">에어컨 철거 <span class="badge-new">신규</span></div>
+                  <div style="font-weight:500;">에어컨 철거 <span class="badge-done">✓ 완료</span></div>
                   <div style="font-size:11px;color:var(--text-sub);margin-top:3px;">하나은행 880-910095-84707 · 임경희(부경에어컨)</div>
                 </td>
                 <td><span class="badge blue">세금계산서</span></td>
-                <td>165,000원</td>
+                <td><span class="amount-done">165,000원</span></td>
                 <td><button class="receipt-btn" onclick="toggleReceipt('r25')">📎</button></td>
               </tr>
               <tr class="receipt-row"><td colspan="5"><div class="receipt-viewer" id="r25">
@@ -852,7 +852,7 @@
       </div>
             <div class="total-bar">
         <span class="tl">총 정산 요청 금액</span>
-        <span class="tv">395,000원</span>
+        <span class="tv">1,135,000원</span>
       </div>
     </div>
   </main>
